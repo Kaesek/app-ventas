@@ -1,0 +1,31 @@
+<h3> Listado de Clientes </h3>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Rut</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Contraseña</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      <th scope="row"></th>
+    <tr *ngFor="let client of clientes">
+      <td>{{client.id}}</td>
+      <td>{{client.rut}}</td>
+      <td>{{client.nombre}}</td>
+      <td>{{client.edad}}</td>
+      <td>{{client.correo}}</td>
+      <td>{{client.password}}</td>
+      <td>
+        <a class="btn btn-primary"><i class="bi bi-gear"></i></a>
+        <a class="btn btn-danger" (click)="eliminar(client.id)"><i class="bi bi-trash"></i></a>
+      </td>
+
+     </tr>
+  </tbody>
+</table>

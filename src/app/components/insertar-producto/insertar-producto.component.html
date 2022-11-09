@@ -1,0 +1,21 @@
+<div class="row mb-3">
+  <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm" >Nombre Producto</label>
+  <div class="col-sm-10">
+    <input type="string" class="form-control form-control-sm" id="colFormLabelSm" placeholder="" [(ngModel)]="producto.nombre">
+  </div>
+</div>
+<div class="row mb-3">
+  <label for="colFormLabel" class="col-sm-2 col-form-label">Descripción Producto</label>
+  <div class="col-sm-10">
+    <input type="string" class="form-control form-control-sm" id="colFormLabelSm" placeholder="" [(ngModel)]="producto.descripcion">
+  </div>
+</div>
+<div class="row">
+  <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-sm">Cantidad</label>
+  <div class="col-sm-10">
+    <input type="string" class="form-control form-control-sm" id="colFormLabelSm" placeholder="" [(ngModel)]="producto.cantidad">
+  </div>
+</div>
+<br><br>
+<button style = "color: lightseagreen" class="save-all button" (click)="guardar()">Guardar</button>
+
